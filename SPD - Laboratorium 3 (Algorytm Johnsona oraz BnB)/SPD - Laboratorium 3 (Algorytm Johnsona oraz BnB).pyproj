@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Brute_force.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Generator.py">
       <SubType>Code</SubType>
     </Compile>
@@ -31,6 +34,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SPD___Laboratorium_3__Algorytm_Johnsona_oraz_BnB_.py" />
+    <Compile Include="Tree.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
