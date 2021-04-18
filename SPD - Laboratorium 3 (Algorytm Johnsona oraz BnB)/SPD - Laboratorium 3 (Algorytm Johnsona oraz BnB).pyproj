@@ -24,6 +24,12 @@
     <Compile Include="Generator.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Johnson_algorithm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Natural_permutation.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SPD___Laboratorium_3__Algorytm_Johnsona_oraz_BnB_.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
