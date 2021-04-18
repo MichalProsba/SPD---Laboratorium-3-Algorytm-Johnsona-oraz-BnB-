@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Brute_force.py">
+    <Compile Include="BnB.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Generator.py">
