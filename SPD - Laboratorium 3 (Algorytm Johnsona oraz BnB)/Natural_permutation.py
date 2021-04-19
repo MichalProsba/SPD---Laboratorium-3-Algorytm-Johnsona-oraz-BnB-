@@ -1,4 +1,5 @@
 from Generator import RandomNumberGenerator
+import copy
 
 class Natural_permutation:
     def __init__(self, seed, n, m):
@@ -49,6 +50,7 @@ class Natural_permutation:
 
         self.CalculateCmax()
         self.CalculateSmax()
+        self.UB = copy.deepcopy(self.C[n-1][m-1])
         
     def CalculateCmax(self):
         self.C[0][0] = self.P[self.Pi[0] - 1][0]
@@ -80,7 +82,6 @@ class Natural_permutation:
         for a in range(1,self.m):
             for i in range(1,len(Pi)):
                 C[i][a] = max(C[i-1][a],C[i][a-1]) + self.P[Pi[i] - 1][a]
-
         return C[len(Pi)-1][self.m-1]
 
     def CalculateSmax(self):

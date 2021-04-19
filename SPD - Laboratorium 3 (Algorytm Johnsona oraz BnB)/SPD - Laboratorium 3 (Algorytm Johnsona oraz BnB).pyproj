@@ -33,6 +33,9 @@
     <Compile Include="Johnson_algorithm.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Johnson_algorithm3.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Natural_permutation.py">
       <SubType>Code</SubType>
     </Compile>

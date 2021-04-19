@@ -8,13 +8,10 @@ class Brute_force (Natural_permutation) :
         self.l = 0
         #Koniec permutacji
         self.k = n - 1
-        #Inicjalizacja UB
-        #self.UB = self.C[n-1][m-1]
-        self.UB = 1000000
 
     def __str__(self):
         str1 = "===================================================================\n"
-        return str1 + " Pi=" + str(self.Pi) + "\n" + str1 + "\n P=" + str(self.P) + "\n" + str1 + "\n S=" + str(self.S) + "\n" + str1 + "\n C=" + str(self.C) + "\n" + str1 
+        return str1 + " Pi=" + str(self.Pi) + "\n" + str1 + "\n P=" + str(self.P) + "\n" + str1 + "\n S=" + str(self.S) + "\n" + str1 + "\n C=" + str(self.C) + "\n" + str1 + "\n" + str1 + str(self.UB)
 
     def First_Brute_force(self):
         Pi = []
@@ -30,12 +27,9 @@ class Brute_force (Natural_permutation) :
                 self.Brute_force(j, copy.deepcopy(P), copy.deepcopy(Pi), copy.deepcopy(Nr))
         else:
             Cmax = self.CalculateCustomCmax(Pi)
-            print("==============================")
-            print(Pi)
-            print(Cmax)
-            print("==============================")
             if Cmax < self.UB:
                 self.UB = Cmax
                 self.Pi = Pi
                 self.CalculateCmax()
                 self.CalculateSmax()
+            #print(self.Pi)
