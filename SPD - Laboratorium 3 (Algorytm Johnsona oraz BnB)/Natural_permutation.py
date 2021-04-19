@@ -58,6 +58,19 @@ class Natural_permutation:
         for i in range(1,self.n):
             self.C[i][1] = max(self.C[i-1][1],self.C[i][0]) + self.P[self.Pi[i] - 1][1]
 
+    def CalculateCustomCmax(self, Pi):
+        C = []
+        for i in range(0, n):
+            z = [None] * len(Pi)
+            C.append(z)
+        C[0][0] = self.P[Pi[0] - 1][0]
+        C[0][1] = C[0][0] + self.P[Pi[0] - 1][1] 
+        for i in range(1,len(Pi)):
+            C[i][0] = C[i-1][0] + self.P[Pi[i] - 1][0]
+        for i in range(1,len(Pi)):
+            C[i][1] = max(C[i-1][1],C[i][0]) + self.P[Pi[i] - 1][1]
+        return C[m-1][len(Pi)-1]
+
     def CalculateSmax(self):
         for i in range(0,self.n):
             for j in range(0,self.m):
