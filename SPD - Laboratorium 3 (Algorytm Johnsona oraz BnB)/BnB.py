@@ -24,7 +24,7 @@ class Branch_and_Bound (Natural_permutation) :
         del P[j_star]
         del self.Nr_Copy[j_star]
         if len(P) > 0:
-            #LB = Bound(Pi,P)? napisać funkcję do wyznaczania LB
+            #LB = Bound(Pi,P)? napisać funkcję do wyznaczania LB która nazywa się Bound
             if LB < self.UB:
                 for j in range(0, len(P)):
                     BnB(j,P,Pi)
