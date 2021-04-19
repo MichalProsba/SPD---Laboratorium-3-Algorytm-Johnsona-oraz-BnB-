@@ -24,6 +24,9 @@
     <Compile Include="BnB.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Brute_force.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Generator.py">
       <SubType>Code</SubType>
     </Compile>
