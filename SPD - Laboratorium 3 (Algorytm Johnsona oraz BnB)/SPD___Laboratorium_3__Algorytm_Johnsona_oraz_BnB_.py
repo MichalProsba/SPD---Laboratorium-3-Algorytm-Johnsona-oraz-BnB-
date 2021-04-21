@@ -14,8 +14,8 @@ print (str1 + "NATURAL PERMUTATION")
 natural_permutation = Natural_permutation(seed, tasks, machines)
 print(natural_permutation)
 
+print (str1 + "JOHNSON ALGORITHM")
 johnson3 = Johnsone_algorithm3(seed, tasks, machines)
-print (str1 + "AFTER JOHNSON ALGORITHM")
 johnson3.Johnson3()
 print(johnson3)
 
