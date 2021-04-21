@@ -44,5 +44,6 @@ class Johnsone_algorithm (Natural_permutation) :
         return self.Pi
 
 
+
     
 

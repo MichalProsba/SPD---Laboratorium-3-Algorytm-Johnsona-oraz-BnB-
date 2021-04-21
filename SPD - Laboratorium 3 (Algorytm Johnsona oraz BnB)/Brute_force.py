@@ -11,7 +11,7 @@ class Brute_force (Natural_permutation) :
 
     def __str__(self):
         str1 = "===================================================================\n"
-        return str1 + " Pi=" + str(self.Pi) + "\n" + str1 + "\n P=" + str(self.P) + "\n" + str1 + "\n S=" + str(self.S) + "\n" + str1 + "\n C=" + str(self.C) + "\n" + str1 + "\n" + str1 + str(self.UB)
+        return str1 + " Pi=" + str(self.Pi) + "\n" + str1 + "\n P=" + str(self.P) + "\n" + str1 + "\n S=" + str(self.S) + "\n" + str1 + "\n C=" + str(self.C) + "\n" + str1 + str(self.UB)
 
     def First_Brute_force(self):
         Pi = []
