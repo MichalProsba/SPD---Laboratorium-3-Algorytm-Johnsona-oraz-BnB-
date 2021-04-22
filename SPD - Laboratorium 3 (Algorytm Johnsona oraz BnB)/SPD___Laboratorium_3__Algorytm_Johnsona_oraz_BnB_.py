@@ -6,7 +6,7 @@ from Brute_force import Brute_force
 from BnB import Branch_and_Bound
 
 seed = 1
-tasks = 7
+tasks = 11
 machines = 5
 
 str1 = "===================================================================\n"
@@ -26,5 +26,6 @@ print(brute_force)
 
 print (str1 + "BnB")
 bnb = Branch_and_Bound(seed, tasks, machines)
+bnb.UB = johnson3.UB
 bnb.BranchAndBound()
 print(bnb)

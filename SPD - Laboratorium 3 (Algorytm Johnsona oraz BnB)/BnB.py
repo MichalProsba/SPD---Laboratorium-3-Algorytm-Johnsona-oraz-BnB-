@@ -35,7 +35,7 @@ class Branch_and_Bound (Natural_permutation) :
                 self.Pi = Pi
                 self.CalculateCmax()
                 self.CalculateSmax()
-            #print(self.Pi)
+            print(self.Pi)
 
     def LowerBound(self, Pi, P):
         Clb = self.CalculateCustomC(Pi)
